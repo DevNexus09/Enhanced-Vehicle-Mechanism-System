@@ -6,6 +6,7 @@ public class Car {
     float maxSpeed;
     String color;
     int price;
+    float currentSpeed;
 
     Car(){
         currentFuelLevel = 2; //Default level set
@@ -27,6 +28,7 @@ public class Car {
     }
 
     public void refuel(){
+        System.out.print("Enter the amount of fuel: ");
         Scanner input = new Scanner(System.in);
         float fuel = input.nextFloat();
 
@@ -34,13 +36,22 @@ public class Car {
         System.out.println("Car is refueled");
     }
 
-    public float getSpeed(){
+    public void getSpeed(){
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter distance covered: ");
         float distanceDriven = input.nextFloat();
+        System.out.print("Enter Time Elapsed: ");
         float duration = input.nextFloat();
 
-        return distanceDriven/duration;
+        currentSpeed+=distanceDriven/duration;
 
+    }
+    public void getCarDetails(){
+
+        System.out.println("Car color is: "+color);
+        System.out.println("Car price is: "+price);
+        System.out.println("Current Fuel Level is: "+currentFuelLevel);
+        System.out.println("Current Speed: "+currentSpeed);
     }
 
 
