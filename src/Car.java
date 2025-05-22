@@ -4,6 +4,15 @@ public class Car {
 
     float currentFuelLevel;
     float maxSpeed;
+    String color;
+    int price;
+
+    Car(){
+        currentFuelLevel = 2; //Default level set
+        color = "Black";
+        price = 500000;
+        maxSpeed = 5.5F;
+    }
 
     public void driveCar(){
         if(currentFuelLevel<=0) System.out.println("Car is out of fuel");
