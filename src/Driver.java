@@ -9,8 +9,8 @@ public class Driver {
         System.out.println("Options:");
         System.out.println("1.Start Driving");
         System.out.println("2.Refuel Car");
-        System.out.println("3.Get car speed");
-        System.out.println("4.Get car details");
+        System.out.println("3.Get Car speed");
+        System.out.println("4.Get Car details");
         System.out.println("5.Exit");
 
         while(true) {

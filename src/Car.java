@@ -9,7 +9,7 @@ public class Car {
     float currentSpeed;
 
     Car(){
-        currentFuelLevel = 2; //Default level set
+        currentFuelLevel = 3; //Default level set
         color = "Black";
         price = 500000;
         maxSpeed = 5.5F;
