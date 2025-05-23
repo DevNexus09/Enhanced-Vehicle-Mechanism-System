@@ -8,11 +8,11 @@ public class Car {
     int price;
     float currentSpeed;
 
-    Car(){
-        currentFuelLevel = 3; //Default level set
-        color = "Black";
-        price = 500000;
-        maxSpeed = 5.5F;
+    Car(float currentFuelLevel,float maxSpeed,String color,int price){  //Parameterized Constructor
+        this.currentFuelLevel = currentFuelLevel;  //this.classVariable = parameterVariable
+        this.color = color;
+        this.price = price;
+        this.maxSpeed = maxSpeed;
     }
 
     public void driveCar(){

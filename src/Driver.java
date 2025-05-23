@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Driver {
     public static void main(String[] args) {
-        Car myCar = new Car();
+
+        Car myCar = new Car(3,25,"Black",500000); //Parameterized Constructor Call
 
         System.out.println("Welcome to the Car Mechanism System");
         System.out.println("Options:");
