@@ -1,4 +1,6 @@
 
+import Karigori.Car;
+
 import java.util.Scanner;
 
 public class Driver {
@@ -6,12 +8,12 @@ public class Driver {
 
         Car myCar = new Car(3,25,"Black",500000); //Parameterized Constructor Call
 
-        System.out.println("Welcome to the Car Mechanism System");
+        System.out.println("Welcome to the Karigori.Car Mechanism System");
         System.out.println("Options:");
         System.out.println("1.Start Driving");
-        System.out.println("2.Refuel Car");
-        System.out.println("3.Get Car speed");
-        System.out.println("4.Get Car details");
+        System.out.println("2.Refuel Karigori.Car");
+        System.out.println("3.Get Karigori.Car speed");
+        System.out.println("4.Get Karigori.Car details");
         System.out.println("5.Exit");
 
         while(true) {
@@ -32,12 +34,15 @@ public class Driver {
                     break;
                 case 3:
                     myCar.getSpeed();
-                    System.out.println("Car Current Speed is: "+myCar.currentSpeed);
-                    if(myCar.currentSpeed > myCar.maxSpeed) System.out.println("OverSpeeding....");
+                    System.out.println("Karigori.Car Current Speed is: "+myCar.getCurrentSpeed());
+                    if(myCar.getCurrentSpeed() > myCar.getMaxSpeed()) System.out.println("OverSpeeding....");
                     break;
                 case 4:
-                    System.out.println("Car Details-");
-                    myCar.getCarDetails();
+                    System.out.println("Karigori.Car Details-");
+                    System.out.println("Karigori.Car color is: "+myCar.getColor());
+                    System.out.println("Karigori.Car price is: "+myCar.getPrice());
+                    System.out.println("Current Fuel Level is: "+myCar.getCurrentFuelLevel());
+                    System.out.println("Current Speed: "+myCar.getCurrentSpeed());
                     break;
             }
         }
