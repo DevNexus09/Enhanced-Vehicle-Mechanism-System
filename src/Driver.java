@@ -6,8 +6,8 @@ public class Driver {
         Scanner input = new Scanner(System.in);
 
 
-        final int NUMBER_OF_VEHICLES = 4;
-        Vehicle[] vehicles = new Vehicle[NUMBER_OF_VEHICLES];
+        final int numberOfVehicles = 4;
+        Vehicle[] vehicles = new Vehicle[numberOfVehicles];
 
 
         vehicles[0] = new Car(20, 180, "Red", 25000, 4, "Sedan");
