@@ -36,7 +36,7 @@ public class Tractor extends FourWheeler {
         }
     }
 
-    @Override
+    @Override //Method Overriding
     public void displayDetails() {
         super.displayDetails(); // Call FourWheeler displayDetails
         System.out.println("Has PTO: " + (hasPTO() ? "Yes" : "No"));

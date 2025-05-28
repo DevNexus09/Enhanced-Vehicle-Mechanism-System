@@ -2,7 +2,7 @@ package Karigori;
 
 import java.util.Scanner;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     protected float currentFuelLevel;
     protected final float maxSpeed;
@@ -57,6 +57,7 @@ public class Vehicle {
         System.out.print("Enter the amount of fuel to add: ");
         Scanner input = new Scanner(System.in);
         float fuel = input.nextFloat();
+        input.nextLine(); // Consume the newline
         currentFuelLevel += fuel;
         System.out.println(this.getClass().getSimpleName() + " is refueled. Current fuel: " + currentFuelLevel);
     }
@@ -65,8 +66,10 @@ public class Vehicle {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter distance covered (km): ");
         float distanceDriven = input.nextFloat();
+        input.nextLine(); // Consume the newline
         System.out.print("Enter time elapsed (hours): ");
         float duration = input.nextFloat();
+        input.nextLine(); // Consume the newline
 
         if (duration <= 0) {
             System.out.println("Time elapsed must be greater than zero.");

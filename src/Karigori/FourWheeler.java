@@ -1,6 +1,6 @@
 package Karigori;
 
-public class FourWheeler extends Vehicle {
+public abstract class FourWheeler extends Vehicle {
 
     public FourWheeler(float currentFuelLevel, float maxSpeed, String color, int price) {
         super(currentFuelLevel, maxSpeed, color, price); // Call Vehicle constructor

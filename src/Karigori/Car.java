@@ -23,7 +23,7 @@ public class Car extends FourWheeler {
         System.out.println(getCarType() + " trunk is open.");
     }
 
-    @Override
+    @Override //Method Overriding
     public void displayDetails() {
         super.displayDetails(); // Call FourWheeler displayDetails
         System.out.println("Number of Doors: " + getNumberOfDoors());

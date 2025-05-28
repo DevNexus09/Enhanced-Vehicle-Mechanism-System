@@ -58,13 +58,13 @@ public class Driver {
                 int nextOption = 5;
                 switch (selectedVehicle) {
                     case Car car : System.out.println(nextOption++ + ". Open Trunk (Car specific)");
-                    break;
+                        break;
                     case Bike bike :
                         System.out.println(nextOption++ + ". Perform Stunt (Bike specific)");
                         System.out.println(nextOption++ + ". Set Engine Type (Bike specific)"); // New option for Bike
                         break;
                     case Bicycle bicycle : System.out.println(nextOption++ + ". Ring Bell (Bicycle specific)");
-                         break;
+                        break;
                     case Tractor tractor :
                         System.out.println(nextOption++ + ". Attach Implement (Tractor specific)");
                         System.out.println(nextOption++ + ". Detach Implement (Tractor specific)"); // New option for Tractor
@@ -144,13 +144,13 @@ public class Driver {
         }
 
     }
-
+    // Helper method to get valid integer input from user
     private static int getUserChoice(Scanner input, int min, int max) {
         int choice;
         while (true) {
             if (input.hasNextInt()) {
                 choice = input.nextInt();
-                input.nextLine();
+                input.nextLine(); // Consume the newline character after reading an int
                 if (choice == 99 || choice == 0 || (choice >= min && choice <= max && choice <= 7)) {
                     break;
                 } else {
